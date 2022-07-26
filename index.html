@@ -11,9 +11,48 @@
 </head>
 
 <body>
-    <h2 class="text-6xl text-center bg-red-200 font-bold mb-4 p-9">Hello World</h2>
-    <p class="text-base">This is paragrph</p>
-    <a href="">I am Anchor</a>
+    <header class="bg-headerBg">
+        <div class="container">
+            <!-- Navigation Bar Start -->
+            <div class="flex items-center justify-between py-4">
+                <div>
+                    <a href=""><img class="w-56 h-10" src="images/logo.png" alt=""></a>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="flex">
+                            <li><a class="text-base font-medium px-5 py-3 mr-12 text-nav" href="">Home</a></li>
+                            <li><a class="text-base font-medium px-5 py-3 mr-12 text-nav" href="">Product</a></li>
+                            <li><a class="text-base font-medium px-5 py-3 mr-12 text-nav" href="">About Us</a></li>
+                            <li><a class="text-base font-medium px-5 py-3 mr-12 text-nav" href="">Contac Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navigation Bar End -->
+
+            <!-- Banner Start -->
+            <div class="flex justify-center items-center py-12">
+                <div class="w-1/2 pr-6">
+                    <h2 class="text-7xl font-semibold leading-snug">
+                        <span class="text-gold">Be the Penguins</span> <br>
+                        <span>Of Winter</span>
+                    </h2>
+                    <p class="text-pargraph pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        aspernatur
+                        enim deleniti obcaecati dolor vero expedita numquam sapiente nam similique?</p>
+                    <a href="" class="bg-btn text-white px-7 py-3 inline-block rounded-lg">
+                        Buy Now
+                    </a>
+                </div>
+                <div class="w-1/2">
+                    <img src="images/model.png" alt="">
+                </div>
+            </div>
+            <!-- Banner End -->
+
+        </div>
+    </header>
 
     <!-- Javascript -->
     <script src="tailwind.config.js"></script>
@@ -21,8 +60,16 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    container: {
+                        center: true,
+                    },
                     colors: {
                         clifford: '#da373d',
+                        nav: '#3c3c3c',
+                        headerBg: '#fffbf0',
+                        gold: '#fabe4c',
+                        pargraph: '#3e3e3e',
+                        btn: '#a4bc46'
                     }
                 }
             }
