@@ -6,9 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin TailwindCss</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <h2 class="text-6xl text-center bg-red-200 font-bold mb-4 p-9">Hello World</h2>
+    <p class="text-base">This is paragrph</p>
+    <a href="">I am Anchor</a>
+
+    <!-- Javascript -->
+    <script src="tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 
